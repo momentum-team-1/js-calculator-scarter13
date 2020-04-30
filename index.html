@@ -5,27 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="calculator.js"></script>
 </head>
 <body>
-    
+ 
+ <div class = "calculator">  
 
-<div class = "row">
-    <div class = "number" id = 7> <p class = "item">7</p></div>
-    <div class = "number" id = 8> <p class = "item">8</p></div>
-    <div class = "number" id = 9> <p class = "item">9</p></div>
-</div>
+    <div class = "row"> 
+        <div class = "operation functionbutton" id = "clear" value="c" onclick="clr()">C</div>
+        <div class = "screen" input type = "text" id = "screen" ></div> 
+    </div>
 
-<div class = "row">
-    <div class = "number" id = 4> <p class = "item">4</p></div>
-    <div class = "number" id = 5> <p class = "item">5</p></div>
-    <div class = "number" id = 6> <p class = "item">6</p></div>
-</div>
+    <div class = "row">
+        <div class = "number numberbutton" id = "btn7" value="7" onclick="console.log(7)">7</div>
+        <div class = "number numberbutton" id = "btn8" value="8" onclick="console.log(8)">8</div>
+        <div class = "number numberbutton" id = "btn9" value="9" onclick="console.log(9)">9</div>
+        <div class = "operation functionbutton" id = "divide" value="/" onclick="console.log(/)">/</div>
+    </div>
 
-<div class = "row">
-    <div class = "number" id = 1> <p class = "item">1</p></div>
-    <div class = "number" id = 2> <p class = "item">2</p></div>
-    <div class = "number" id = 3> <p class = "item">3</p></div>
-</div>
+    <div class = "row">
+        <div class = "number numberbutton" id = "btn4" value="4" onclick="console.log(4)">4</div>
+        <div class = "number numberbutton" id = "btn5" value="5" onclick="console.log(5)">5</div>
+        <div class = "number numberbutton" id = "btn6" value="6" onclick="console.log(6)">6</div>
+        <div class = "operation functionbutton" id = "multiply" value="*" onclick="console.log(*)">*</div>
+    </div>
+
+    <div class = "row">
+        <div class = "number numberbutton" id = "btn1" value="1" onclick="console.log(1)">1</div>
+        <div class = "number numberbutton" id = "btn2" value="2" onclick="console.log(2)">2</div>
+        <div class = "number numberbutton" id = "btn3" value="3" onclick="console.log(3)">3</div>
+        <div class = "operation functionbutton" id = "minus" value="-" onclick="console.log(-)">-</div>
+    </div>
+
+    <div class = "row">
+        <div class = "number numberbutton" id = "btn0" value="0" onclick="console.log(0)">0</div>
+        <div class = "number numberbutton" id = "btndec" value="." onclick="console.log(.)">.</div>
+        <div class = "operation functionbutton" id = "equal" value="=" onclick="console.log(=)">=</div>
+        <div class = "operation functionbutton" id = "plus" value="" onclick="console.log(+)">+</div>
+    </div>
+
+</div>  
 
 </body>
 </html>
